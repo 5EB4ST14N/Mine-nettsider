@@ -1,0 +1,61 @@
+
+body{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#mandag .h1{
+    color: darkslateblue;
+    font-size: x-large;
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:120px;
+    margin-left: -800px;
+    
+}
+#tirsdag .h1{
+    color: darkolivegreen;
+    font-size: x-large;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:120px;
+    margin-left: -650px;
+    
+}
+#onsdag .h1{
+    color: darkorange;
+    font-size: x-large;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:120px;
+    margin-left: -500px;
+    
+}
+#torsdag .h1{
+    color: deeppink;
+    font-size: x-large;
+    margin-left: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:120px;
+    margin-left: -350px;
+}
+#fredag .h1{
+    color: darkseagreen;
+    font-size: x-large;
+    margin-left: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:120px;
+    margin-left: -200px;
+}
+
+.uke{
+    color: dodgerblue;
+    font-size: xx-large;
+    text-align: center;
+    margin-left: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
