@@ -1,0 +1,84 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(149, 179, 237, 0.9);
+    font-size: larger;
+    margin-bottom: -20px;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(243, 111, 111, 0.9);
+    ;
+    font-size: larger;
+    margin-bottom: -20px;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(199, 241, 135, 0.9);
+    font-size: larger;
+
+}
+
+body {
+
+    background-color: white;
+
+}
+
+.del-1 {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(18, 1fr);
+    position: absolute;
+    top: 8%;
+}
+
+div {
+    padding: 20px;
+    background-color: rgba(149, 179, 237, 0.9);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.span-2 {
+    grid-column: span 16;
+    opacity: 0;
+}
+
+.span-3 {
+    grid-column: span 10;
+    opacity: 0;
+}
+
+.liste {
+    background-color: transparent;
+    color: black;
+}
+
+.del-2 {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(15, 1fr);
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -145%);
+
+}
+
+.grønn {
+    background-color: rgb(199, 241, 135);
+}
+
+.rød {
+    background-color: rgb(243, 111, 111);
+}
