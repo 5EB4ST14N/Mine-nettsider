@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">WELCOME TO THE PRIKKEGAME</h1>
+    <style>
+        #h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div {
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+    <input id="farge" type="color">
+    <script>
+        window.onclick = function (evt) {
+            ny = true
+            evt.stopPropagation();
+            var mittElement = document.createElement("div");
+            mittElement.style.top = evt.clientY - 25 + "px";
+            mittElement.style.left = evt.clientX - 25 + "px";
+            mittElement.onclick = fjern;
+            document.body.appendChild(mittElement)
+            mittElement.style.backgroundColor = farge.value;
+            mittElement.onmouseenter = fjern;
+        }
+        var farge = document.getElementById("farge")
+        farge.onclick = function (evt) {
+            evt.stopPropagation();
+        }
+
+        var fjern = function (evt) {
+
+            evt.stopPropagation();
+            if (!ny) {
+                var minAnim = evt.target.animate([{ transform: "scale(1)" }, { transform: "scale(2)" }], 100)
+                minAnim.onfinish = function () {
+                    document.body.removeChild(evt.target);
+                    lyd.play();
+                    teller++
+                    tellerP.innerHTML = teller;
+                }
+            }
+            ny = false
+        }
+    </script>
+</body>
+
+</html>

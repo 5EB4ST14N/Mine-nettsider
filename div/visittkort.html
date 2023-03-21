@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russekort creator</title>
+    <style>
+        #mal1 {
+            border: solid 2px;
+            margin-left: 50%;
+            margin-top: -5%;
+            width: 42vw;
+            height: 45vh;
+            background: hsla(0, 51%, 92%, 1);
+
+            background: radial-gradient(circle, hsla(0, 51%, 92%, 1) 1%, hsla(0, 85%, 56%, 1) 34%);
+
+            background: -moz-radial-gradient(circle, hsla(0, 51%, 92%, 1) 1%, hsla(0, 85%, 56%, 1) 34%);
+
+            background: -webkit-radial-gradient(circle, hsla(0, 51%, 92%, 1) 1%, hsla(0, 85%, 56%, 1) 34%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#f5e0e0", endColorstr="#ee3232", GradientType=1);
+        }
+
+        #mal2 {
+            border: solid 2px;
+            margin-left: 50%;
+            margin-top: -5%;
+            width: 42vw;
+            height: 45vh;
+            background: hsla(0, 0%, 100%, 1);
+
+            background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(221, 69%, 41%, 1) 32%);
+
+            background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(221, 69%, 41%, 1) 32%);
+
+            background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 0%, hsla(221, 69%, 41%, 1) 32%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#204DB1", GradientType=1);
+        }
+
+
+        #tittel {
+            height: 13.5vh;
+            margin-left: 20%;
+            position: absolute;
+
+        }
+
+        #skoleOverst {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 1%;
+
+
+        }
+
+        #navnpaakort {
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 8%;
+            margin-left: 28%;
+        }
+
+        #adressekort {
+            margin-left: 28%;
+            margin-top: 10%;
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: smaller;
+
+
+
+        }
+
+        #tlfnr {
+            margin-left: 28%;
+            margin-top: 11%;
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: smaller;
+        }
+
+        #sitat {
+            margin-left: 22%;
+            margin-top: 12%;
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: smaller;
+        }
+
+        #sitatto {
+            margin-left: 22%;
+            margin-top: 13%;
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: smaller;
+        }
+
+        #sort {
+            position: absolute;
+            top: 31%;
+            height: 230px;
+            width: 190px;
+            margin-left: 4.4%;
+            background-color: black;
+            transform: rotate(-15deg);
+
+        }
+
+        #bilde {
+            position: absolute;
+            top: 30%;
+            height: 220px;
+            width: 180px;
+            margin-left: 3%;
+            background-color: greenyellow;
+            transform: rotate(-15deg);
+            border: solid 5px black;
+        }
+
+        #lagdittrk {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        #vfarge {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+
+        #infokort {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #bcolor {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #rcolor {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #vbilde {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="lagdittrk"> Lag ditt eget russekort</h1>
+    <p id="vfarge">Velg en farge</p>
+    <label id="bcolor" for="farge">Blå:</label>
+    <input onclick="blaacolor()" type="radio" name="farge" id="blaa">
+
+    <label id="rcolor" for="farge">Rød:</label>
+    <input onclick="rodcolor()" type="radio" name="farge" id="rod">
+    <br>
+    <label id="vbilde" for="fil">Velg bilde:</label>
+    <input name="fil" type="file" id="inpFilNavn">
+    <br>
+    <p id="infokort">Skriv infoen din rett inn på kortet!</p>
+    <div id="mal1">
+        <h3 contenteditable="true" id="skoleOverst">SKOLE</h3>
+        <img id="tittel" src="rodruss.tittel.png" alt="">
+        <div id="sort"></div>
+        <img src="" id="bilde">
+        <h4 contenteditable="true" id="navnpaakort">NAVN</h4>
+        <p contenteditable="true" id="adressekort">Adr: </p>
+        <p contenteditable="true" id="tlfnr">Tlf: </p>
+        <p contenteditable="true" id="sitat">Sitat 1: </p>
+        <p contenteditable="true" id="sitatto">Sitat 2: </p>
+    </div>
+
+    <script src="visitttkort.js"></script>
+</body>
+
+</html>
